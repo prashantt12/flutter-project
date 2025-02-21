@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_first_version/pages/homepage.dart';
 import 'package:flutter_first_version/pages/login_page.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'utils/routes.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -12,6 +14,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
+      // removing the debug banner in development ( BECAUSE I DO NOT LIKE IT ON THE SCREEN 🙂 )
+      debugShowCheckedModeBanner: false,
+
       // adjusting the theme mode as dark/light according to the system settings
       themeMode: ThemeMode.light,
       theme: ThemeData(
@@ -28,7 +34,7 @@ class MyApp extends StatelessWidget {
       routes: {
         // defining the initial route for the app
         "/": (context) => LoginPage(),
-        "/home":(context) => HomePage(),
+        MyRoutes.homeRoute:(context) => HomePage(),
         // defining the route for the login page
         "/login": (context) => LoginPage(),
       },
