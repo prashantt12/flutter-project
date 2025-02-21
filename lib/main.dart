@@ -19,13 +19,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       // adjusting the theme mode as dark/light according to the system settings
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.dark,
       theme: ThemeData(
           primarySwatch: Colors.deepPurple,
           // adding primary font as some font from the google-font library
           fontFamily: GoogleFonts.acme().fontFamily,
           appBarTheme: AppBarTheme(backgroundColor: Colors.deepPurple, foregroundColor: Colors.white)),
-      darkTheme: ThemeData(brightness: Brightness.dark),
+      darkTheme: ThemeData(brightness: Brightness.dark, appBarTheme: AppBarTheme(backgroundColor: Colors.deepPurple)),
 
       // defining the initial-route for the application
       initialRoute: "/",
