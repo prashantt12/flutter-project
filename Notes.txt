@@ -1,0 +1,10 @@
+Random Notes File: 😭
+
+1. when we have an {ancestor -> child} relation in the code then we should not add the decoration property in the child, we should add it only to the ancestor.
+
+2. SetState tells Flutter that something has changed and it needs to build the widget Tree ( basically calling the build() function again )
+
+3.  to check if the scroll view is working as expected we can test it out by increasing the size of the image, if the SingleChildScrollView was not present then we will be getting an error of "Overflow" so this should be always taken care of.
+          height: 600,
+
+4. SizedBox can be used to give spacing between different widgets of the same page.
