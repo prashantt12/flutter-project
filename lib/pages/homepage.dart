@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_first_version/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget{
+  const HomePage({super.key});
 
   final int days = 30;
   final double doubleDays = 20;
@@ -21,7 +23,7 @@ class HomePage extends StatelessWidget{
           child: Text("Welcome to $days days and $doubleDays days of Flutter Coding. This is the value of number: $number1"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
