@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_first_version/pages/homepage.dart';
-import 'package:flutter_first_version/pages/login_page.dart';
+import 'package:flutter_first_version/pages/loginpage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'utils/routes.dart';
@@ -28,12 +28,12 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(brightness: Brightness.dark, appBarTheme: AppBarTheme(backgroundColor: Colors.deepPurple)),
 
       // defining the initial-route for the application
-      initialRoute: "/",
+      initialRoute: MyRoutes.homeRoute,
 
       // defining the routes for the application
       routes: {
         // defining the initial route for the app
-        "/": (context) => LoginPage(),
+        // "/": (context) => LoginPage(),
         MyRoutes.homeRoute:(context) => HomePage(),
         // defining the route for the login page
         "/login": (context) => LoginPage(),

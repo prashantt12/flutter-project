@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_first_version/utils/routes.dart';
 
 class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
+
   @override
   State<LoginPage> createState() => _LoginPageState();
 }
