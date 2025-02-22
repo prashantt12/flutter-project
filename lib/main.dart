@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       // adjusting the theme mode as dark/light according to the system settings
-      themeMode: ThemeMode.dark,
+      themeMode: ThemeMode.light,
       theme: ThemeData(
           primarySwatch: Colors.deepPurple,
           // adding primary font as some font from the google-font library
