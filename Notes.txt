@@ -8,3 +8,5 @@ Random Notes File: 😭
           height: 600,
 
 4. SizedBox can be used to give spacing between different widgets of the same page.
+
+5. ListView.builder() => basically it is used to create a scrollable list efficiently, especially when dealing with large or dynamic dataset. Instead of rendering all the items at once, it builds items lazily as they appear on the screen HENCE improving performance.
